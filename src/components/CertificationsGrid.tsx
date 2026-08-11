@@ -38,14 +38,19 @@ export default function CertificationsGrid() {
                 Participación certificada en conferencias internacionales sobre IA Generativa, arquitectura de modelos y ética digital.
               </p>
             </div>
-            <a
-              href="https://openchapitas.org/credentials/a0c04b29-b0bc-4a44-be1d-a949157a9206?v=3"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-1.5 bg-amber-500/10 text-amber-400 border border-amber-500/30 text-xs py-2 px-3 rounded-lg font-semibold hover:bg-amber-500/20 transition-all"
-            >
-              <ExternalLink className="w-3.5 h-3.5" /> Verificar Credencial OpenChapitas
-            </a>
+            <div>
+              <a
+                href="https://openchapitas.org/credentials/a0c04b29-b0bc-4a44-be1d-a949157a9206?v=3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 bg-amber-500/10 text-amber-400 border border-amber-500/30 text-xs py-2 px-3 rounded-lg font-semibold hover:bg-amber-500/20 transition-all mb-3 w-full"
+              >
+                <ExternalLink className="w-3.5 h-3.5" /> Verificar Credencial OpenChapitas
+              </a>
+              <div className="rounded-lg overflow-hidden border border-white/10 relative h-40 bg-white/5">
+                <img src="/cert-ia-latam.jpg" alt="Certificado 1er Congreso IA LATAM 2026" className="w-full h-full object-cover" />
+              </div>
+            </div>
           </div>
 
           {/* Cert 2: Mision Buenos Aires (ITBA & UPC) */}
