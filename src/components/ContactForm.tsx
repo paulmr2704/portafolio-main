@@ -132,7 +132,7 @@ export default function ContactForm() {
                     value={formData.name}
                     onChange={e => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Ej. Carlos Mendoza"
-                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-[#FF1E42] transition-colors"
+                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:border-[#FF1E42] transition-colors"
                   />
                 </div>
 
@@ -144,7 +144,7 @@ export default function ContactForm() {
                     value={formData.email}
                     onChange={e => setFormData({ ...formData, email: e.target.value })}
                     placeholder="ejemplo@empresa.com"
-                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-[#FF1E42] transition-colors"
+                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:border-[#FF1E42] transition-colors"
                   />
                 </div>
 
@@ -156,7 +156,7 @@ export default function ContactForm() {
                     value={formData.message}
                     onChange={e => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Escribe tu mensaje o propuesta aquí..."
-                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-[#FF1E42] transition-colors"
+                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:border-[#FF1E42] transition-colors"
                   />
                 </div>
 

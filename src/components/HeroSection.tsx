@@ -1,6 +1,6 @@
 'use client';
 
-import { Trophy, Rocket, Brain, Shield, Bot, Palette, LineChart, Lock, Cloud } from 'lucide-react';
+import { Trophy, Rocket, Brain, Shield, Bot, Palette, LineChart, Lock, Cloud, FileText, MapPin, Briefcase } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/Icons';
 import { motion } from 'framer-motion';
 
@@ -17,13 +17,21 @@ export default function HeroSection() {
         
         {/* Left Column: Text & Stats */}
         <div className="lg:col-span-7 space-y-6">
-          <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 px-4 py-1.5 rounded-full text-amber-400 text-xs font-semibold">
-            <Trophy className="w-4 h-4 text-amber-400" />
-            <span>2º Puesto - Hackathon Internacional de Ciberseguridad e IA | ITBA Argentina</span>
+          <div className="flex flex-wrap gap-3">
+            <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 px-4 py-1.5 rounded-full text-amber-400 text-xs font-semibold">
+              <Trophy className="w-4 h-4 text-amber-400" />
+              <span>2º Puesto - Hackathon de Ciberseguridad e IA | ITBA Buenos Aires (Delegación UPC)</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1.5 rounded-full text-emerald-400 text-xs font-semibold">
+              <MapPin className="w-3.5 h-3.5" /> Lima, Perú (Remoto/Híbrido)
+            </div>
+            <div className="inline-flex items-center gap-1.5 bg-blue-500/10 border border-blue-500/30 px-3 py-1.5 rounded-full text-blue-400 text-xs font-semibold">
+              <Briefcase className="w-3.5 h-3.5" /> Open to Work
+            </div>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-            Comprendiendo la <span className="bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">Mente Humana</span> para Diseñar y Defender Soluciones con <span className="bg-gradient-to-r from-[#FF1E42] to-[#FF4D6D] bg-clip-text text-transparent">IA & Ciberseguridad</span>
+            Comprendiendo la <span className="bg-gradient-to-r from-white via-slate-100 to-rose-300 bg-clip-text text-transparent">Mente Humana</span> para Diseñar y Defender Soluciones con <span className="bg-gradient-to-r from-[#FF1E42] to-[#FF4D6D] bg-clip-text text-transparent">IA & Ciberseguridad</span>
           </h1>
 
           <p className="text-slate-300 text-lg max-w-2xl leading-relaxed">
@@ -50,6 +58,9 @@ export default function HeroSection() {
             <a href="#proyectos" className="inline-flex items-center gap-2 bg-[#FF1E42] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#E6002E] transition-all">
               <Rocket className="w-4 h-4" /> Ver Proyectos Destacados
             </a>
+            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg font-bold hover:bg-slate-200 transition-all">
+              <FileText className="w-4 h-4 text-black" /> Descargar CV (PDF)
+            </a>
             <a href="https://github.com/paulmr2704" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/10 text-white px-6 py-3 rounded-lg font-semibold border border-white/15 hover:bg-white/20 transition-all">
               <GithubIcon className="w-4 h-4" /> GitHub
             </a>
@@ -71,7 +82,7 @@ export default function HeroSection() {
             </div>
 
             <h3 className="text-2xl font-bold text-white mb-1">Paulo Cesar Meza Rojas</h3>
-            <p className="text-slate-400 text-sm mb-6">Psicología Organizacional x Ciberseguridad SOC</p>
+            <p className="text-slate-400 text-sm mb-6">Analista de Ciberseguridad (SOC) & Desarrollador de IA</p>
 
             <div className="flex flex-wrap justify-center gap-2 mb-6">
               <span className="bg-white/5 border border-white/10 text-slate-300 text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">

@@ -190,9 +190,10 @@ export default function GoogleCourses() {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {currentGroup.courses.map((course, idx) => (
-              <div key={idx} className="bg-white/[0.02] border border-white/5 p-5 rounded-xl hover:border-[#FF1E42]/50 hover:bg-[#FF1E42]/[0.02] transition-all">
+              <div key={idx} className="min-w-[280px] sm:min-w-[320px] shrink-0 snap-start bg-white/[0.02] border border-white/5 p-5 rounded-xl hover:border-[#FF1E42]/50 hover:bg-[#FF1E42]/[0.02] transition-all relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#FF1E42]/0 via-[#FF1E42]/5 to-[#FF1E42]/0 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-full group-hover:translate-x-full duration-1000 ease-in-out" />
                 <span className="text-xs font-mono text-[#FF1E42] block mb-1">{course.num}</span>
                 <h4 className="font-bold text-white text-base mb-2">{course.title}</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">{course.desc}</p>

@@ -39,7 +39,7 @@ export default function ProjectsGrid() {
           <span className="inline-flex items-center gap-1.5 font-mono text-xs text-[#FF1E42] bg-[#FF1E42]/10 border border-[#FF1E42]/30 px-3.5 py-1 rounded-full uppercase tracking-wider mb-3">
             LOGROS Y PROYECTOS
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">Proyectos Destacados e Impacto Internacional</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white">Proyectos Destacados y Soluciones de Alto Impacto</h2>
           <p className="text-slate-400 mt-2">Soluciones desarrolladas bajo altos estándares de ciberseguridad e Inteligencia Artificial.</p>
         </div>
 
@@ -49,14 +49,14 @@ export default function ProjectsGrid() {
           <div className="bento-glass p-8 gold-border flex flex-col justify-between relative">
             <div>
               <div className="inline-flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs px-3 py-1 rounded-full mb-4">
-                <Trophy className="w-3.5 h-3.5" /> PREMIO INTERNACIONAL - 2º PUESTO ITBA
+                <Trophy className="w-3.5 h-3.5" /> 2º PUESTO - HACKATHON DE CIBERSEGURIDAD & IA (ITBA)
               </div>
 
               <span className="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Ciberseguridad & Agentes de IA</span>
               <h3 className="text-xl font-bold text-white mb-3">Yape Track AI – Agente Autónomo Antifraude</h3>
 
               <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                Co-desarrollador del agente inteligente de seguridad para billeteras digitales presentado en la <strong className="text-white">Hackathon de Ciberseguridad e IA del ITBA en Buenos Aires, Argentina (Agosto 2026)</strong>. Logró el <strong className="text-white">2º Puesto</strong> frente a 6 equipos internacionales.
+                Co-desarrollador del agente inteligente antifraude para billeteras digitales presentado en la Hackathon del curso de inmersión en el <strong className="text-white">ITBA (Buenos Aires, Argentina)</strong>. Logró el <strong className="text-white">2º Puesto</strong> compitiendo entre los 6 equipos de la delegación.
               </p>
 
               <div className="flex flex-wrap gap-2 mb-6 font-mono text-xs">
