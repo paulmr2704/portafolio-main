@@ -79,27 +79,27 @@ export default function FourPillars() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-8 space-y-4">
                 <h3 className="text-2xl font-bold text-white flex items-center gap-2">
-                  <Brain className="w-7 h-7 text-[#FF1E42]" /> Psicología Organizacional, Neuropsicología & Factor Humano
+                  <Brain className="w-7 h-7 text-[#FF1E42]" /> Psicología Organizacional & Factor Humano en Tecnología
                 </h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Estudiante en la <strong className="text-white">Universidad Peruana de Ciencias Aplicadas (UPC)</strong> con <strong className="text-white">55 créditos aprobados</strong>. Formación de alto rendimiento académico con notas sobresalientes en <strong className="text-white">Procesos Psicológicos Básicos (Nota 19)</strong>, <strong className="text-white">Aprendizaje Estratégico y Liderazgo (Nota 18)</strong>, <strong className="text-white">Bases Biológicas del Comportamiento (Nota 16)</strong> e <strong className="text-white">Introducción a la Estadística (Nota 17)</strong>.
+                  Cursando el 3er ciclo en la <strong className="text-white">Universidad Peruana de Ciencias Aplicadas (UPC)</strong>. Enfocado en la ingeniería social, la mitigación de riesgos humanos en ciberseguridad, el diseño centrado en personas y la dinámica de grupos de alto rendimiento.
                 </p>
                 <ul className="space-y-2.5 pt-2 text-slate-300">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF1E42] shrink-0 mt-0.5" />
-                    <span><strong className="text-white">Procesos Cognitivos & Sesgos (Nota 19):</strong> Análisis de la percepción, atención, memoria y sesgos cognitivos aplicados a la prevención de ingeniería social.</span>
+                    <span><strong className="text-white">Ingeniería Social & Phishing Defensivo:</strong> Análisis del comportamiento humano ante vectores de ataque.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF1E42] shrink-0 mt-0.5" />
-                    <span><strong className="text-white">Bases Biológicas & Neuropsicología (Nota 16):</strong> Estudio de la estructura funcional del comportamiento humano y toma de decisiones bajo presión.</span>
+                    <span><strong className="text-white">Psicología de la Usabilidad:</strong> Diseño intuitivo que minimiza el error humano en software crítico.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF1E42] shrink-0 mt-0.5" />
-                    <span><strong className="text-white">Estadística Aplicada & Evaluación Psicológica (Nota 17):</strong> Modelado cuantitativo de datos, psicometría y evaluación objetiva de factores de riesgo.</span>
+                    <span><strong className="text-white">Resolución de Conflictos & Trabajo bajo Presión:</strong> Comprobado en entornos operativos de alta demanda.</span>
                   </li>
                 </ul>
               </div>
-              <div className="lg:col-span-4 relative overflow-hidden rounded-2xl border border-white/10 p-6 text-center group min-h-[240px] flex flex-col justify-center items-center">
+              <div className="lg:col-span-4 relative overflow-hidden rounded-2xl border border-white/10 p-6 text-center group min-h-[220px] flex flex-col justify-center items-center">
                 <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                   style={{ backgroundImage: `url('/upc-campus.jpg')` }}
@@ -110,9 +110,8 @@ export default function FourPillars() {
                     <GraduationCap className="w-7 h-7 text-[#FF1E42]" />
                   </div>
                   <h4 className="font-bold text-white text-lg drop-shadow">UPC - Psicología</h4>
-                  <p className="text-xs text-slate-300 mt-2 leading-relaxed font-mono">
-                    55 Créditos Aprobados<br />
-                    Promedio Destacado en Ciencias del Comportamiento & Estadística
+                  <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+                    Aplicación práctica en Ciberpsicología, Seguridad de la Información y Arquitectura Organizacional.
                   </p>
                 </div>
               </div>
