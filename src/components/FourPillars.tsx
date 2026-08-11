@@ -185,10 +185,21 @@ export default function FourPillars() {
                   </li>
                 </ul>
               </div>
-              <div className="lg:col-span-4 bg-white/[0.02] border border-white/10 p-6 rounded-2xl text-center">
-                <Trophy className="w-12 h-12 text-amber-400 mx-auto mb-3" />
-                <h4 className="font-bold text-white text-lg">2º Puesto ITBA Argentina</h4>
-                <p className="text-xs text-slate-400 mt-2">Competencia técnica contra 6 equipos internacionales de alto rendimiento.</p>
+              <div className="lg:col-span-4 relative overflow-hidden rounded-2xl border border-amber-500/30 p-6 text-center group min-h-[220px] flex flex-col justify-center items-center">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  style={{ backgroundImage: `url('/itba-group.jpg')` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0608] via-[#0A0608]/90 to-[#0A0608]/75" />
+                <div className="relative z-10">
+                  <div className="w-14 h-14 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mx-auto mb-3 backdrop-blur-sm">
+                    <Trophy className="w-7 h-7 text-amber-400" />
+                  </div>
+                  <h4 className="font-bold text-white text-lg drop-shadow">2º Puesto ITBA Argentina</h4>
+                  <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+                    Competencia técnica contra 6 equipos internacionales de alto rendimiento.
+                  </p>
+                </div>
               </div>
             </div>
           )}
