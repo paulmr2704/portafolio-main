@@ -87,29 +87,30 @@ export default function ProjectsGrid() {
             </div>
           </div>
 
-          {/* Project 3: Beauty Salon App */}
-          <div className="bento-glass p-8 flex flex-col justify-between">
+          {/* Project 3: Beauty Salon Web Platform (Google UX Coursera) */}
+          <div className="bento-glass p-8 flex flex-col justify-between border-cyan-500/20">
             <div>
               <div className="inline-flex items-center gap-1.5 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-mono text-xs px-3 py-1 rounded-full mb-4">
-                <Compass className="w-3.5 h-3.5" /> UX/UI + AI AGENT
+                <Compass className="w-3.5 h-3.5" /> GOOGLE UX DESIGN - COURSERA
               </div>
 
-              <span className="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Diseño de Producto & Desarrollo asistido por IA</span>
-              <h3 className="text-xl font-bold text-white mb-3">App de Gestión para Salón de Belleza</h3>
+              <span className="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Diseño de Producto Web (Design Thinking en 5 Fases)</span>
+              <h3 className="text-xl font-bold text-white mb-3">Plataforma Web de Gestión & Reservas de Belleza</h3>
 
               <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                Conceptualización del flujo de usuarios, bocetado e interfaz en Figma. Implementación de lógica con modelos generativos (Figma AI) y desarrollo asistido por la plataforma <strong className="text-white">Google Antigravity IDE</strong>.
+                Caso de estudio del certificado profesional <strong className="text-white">Google UX Design</strong>. Investigación de usuarios (User Personas, Journey Maps), wireframes Low-Fi & Hi-Fi en Figma, Design System accesible y validación mediante pruebas de usabilidad y estándares <strong className="text-white">WCAG 2.1</strong>.
               </p>
 
               <div className="flex flex-wrap gap-2 mb-6 font-mono text-xs">
+                <span className="bg-[#FF1E42]/10 text-[#FF1E42] px-2.5 py-1 rounded border border-[#FF1E42]/20">Google UX</span>
                 <span className="bg-[#FF1E42]/10 text-[#FF1E42] px-2.5 py-1 rounded border border-[#FF1E42]/20">Figma UX/UI</span>
-                <span className="bg-[#FF1E42]/10 text-[#FF1E42] px-2.5 py-1 rounded border border-[#FF1E42]/20">Figma AI</span>
-                <span className="bg-[#FF1E42]/10 text-[#FF1E42] px-2.5 py-1 rounded border border-[#FF1E42]/20">Google Antigravity IDE</span>
+                <span className="bg-[#FF1E42]/10 text-[#FF1E42] px-2.5 py-1 rounded border border-[#FF1E42]/20">Design Thinking</span>
+                <span className="bg-[#FF1E42]/10 text-[#FF1E42] px-2.5 py-1 rounded border border-[#FF1E42]/20">WCAG 2.1</span>
               </div>
             </div>
 
-            <div className="text-xs text-slate-400 font-mono">
-              ⚡ En fase de prototipado asistido por IA
+            <div className="text-xs text-slate-400 font-mono flex items-center gap-1.5">
+              🎨 Proyecto de Certificación Google UX / Coursera
             </div>
           </div>
 
