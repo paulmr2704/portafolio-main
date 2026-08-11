@@ -107,11 +107,11 @@ export default function ProjectsGrid() {
                 className="w-full mb-4 bg-white/5 border border-white/10 hover:border-[#FF1E42] text-white py-2.5 px-4 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition-all group hover:bg-[#FF1E42]/10 cursor-pointer"
               >
                 <Eye className="w-4 h-4 text-[#FF1E42] group-hover:scale-110 transition-transform" />
-                <span>🔍 Ver Evidencias del Caso (3 Diagramas)</span>
+                <span>Ver Evidencias del Caso (3 Diagramas)</span>
               </button>
 
               <div className="text-xs text-slate-400 font-mono flex items-center gap-1.5">
-                🛡️ Pontificia Universidad Javeriana & UPC (2026)
+                Pontificia Universidad Javeriana & UPC (2026)
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function ProjectsGrid() {
             </div>
 
             <div className="text-xs text-slate-400 font-mono flex items-center gap-1.5">
-              🎨 Proyecto de Certificación Google UX / Coursera
+              Proyecto de Certificación Google UX / Coursera
             </div>
           </div>
 
