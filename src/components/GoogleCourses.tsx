@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { LineChart, ShieldCheck, Palette, Server, ExternalLink, CheckCircle, Lock } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -18,6 +18,14 @@ interface CertGroup {
 
 export default function GoogleCourses() {
   const [activeCert, setActiveCert] = useState<'g-analytics' | 'g-cyber' | 'g-ux' | 'g-it'>('g-analytics');
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const handleCertChange = (key: 'g-analytics' | 'g-cyber' | 'g-ux' | 'g-it') => {
+    setActiveCert(key);
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollLeft = 0;
+    }
+  };
 
   const certificatesData: Record<string, CertGroup> = {
     'g-analytics': {
@@ -80,13 +88,9 @@ export default function GoogleCourses() {
   const currentGroup = certificatesData[activeCert];
 
   return (
-    <motion.section 
+    <section 
       id="habilidades" 
       className="py-20 bg-[#060304] relative"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-4">
         
@@ -102,8 +106,9 @@ export default function GoogleCourses() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           
           <button
-            onClick={() => setActiveCert('g-analytics')}
-            className={`bento-glass p-5 text-left transition-all ${
+            type="button"
+            onClick={() => handleCertChange('g-analytics')}
+            className={`bento-glass p-5 text-left transition-all cursor-pointer active:scale-95 ${
               activeCert === 'g-analytics' ? 'border-[#FF1E42] bg-[#FF1E42]/10' : 'hover:border-[#FF1E42]/50'
             }`}
           >
@@ -118,8 +123,9 @@ export default function GoogleCourses() {
           </button>
 
           <button
-            onClick={() => setActiveCert('g-cyber')}
-            className={`bento-glass p-5 text-left transition-all ${
+            type="button"
+            onClick={() => handleCertChange('g-cyber')}
+            className={`bento-glass p-5 text-left transition-all cursor-pointer active:scale-95 ${
               activeCert === 'g-cyber' ? 'border-[#FF1E42] bg-[#FF1E42]/10' : 'hover:border-[#FF1E42]/50'
             }`}
           >
@@ -134,8 +140,9 @@ export default function GoogleCourses() {
           </button>
 
           <button
-            onClick={() => setActiveCert('g-ux')}
-            className={`bento-glass p-5 text-left transition-all ${
+            type="button"
+            onClick={() => handleCertChange('g-ux')}
+            className={`bento-glass p-5 text-left transition-all cursor-pointer active:scale-95 ${
               activeCert === 'g-ux' ? 'border-[#FF1E42] bg-[#FF1E42]/10' : 'hover:border-[#FF1E42]/50'
             }`}
           >
@@ -150,8 +157,9 @@ export default function GoogleCourses() {
           </button>
 
           <button
-            onClick={() => setActiveCert('g-it')}
-            className={`bento-glass p-5 text-left transition-all ${
+            type="button"
+            onClick={() => handleCertChange('g-it')}
+            className={`bento-glass p-5 text-left transition-all cursor-pointer active:scale-95 ${
               activeCert === 'g-it' ? 'border-[#FF1E42] bg-[#FF1E42]/10' : 'hover:border-[#FF1E42]/50'
             }`}
           >
@@ -168,11 +176,11 @@ export default function GoogleCourses() {
         </div>
 
         {/* Courses Display Area */}
-        <div className="bento-glass p-8">
+        <div className="bento-glass p-5 md:p-8">
           
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 mb-6 border-b border-white/10 gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-5 mb-5 border-b border-white/10 gap-4">
             <div>
-              <h3 className="text-xl font-bold text-white flex items-center gap-2">
+              <h3 className="text-lg md:text-xl font-bold text-white flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-[#FF1E42]" /> {currentGroup.title}
               </h3>
               <span className="text-xs font-mono text-cyan-400 flex items-center gap-1 mt-1">
@@ -190,13 +198,21 @@ export default function GoogleCourses() {
             </a>
           </div>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          <div 
+            ref={scrollContainerRef}
+            className="flex overflow-x-auto gap-3.5 pb-3 scroll-smooth [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-track]:bg-white/5 [&::-webkit-scrollbar-thumb]:bg-[#FF1E42]/40 [&::-webkit-scrollbar-thumb]:rounded-full"
+          >
             {currentGroup.courses.map((course, idx) => (
-              <div key={idx} className="min-w-[280px] sm:min-w-[320px] shrink-0 snap-start bg-white/[0.02] border border-white/5 p-5 rounded-xl hover:border-[#FF1E42]/50 hover:bg-[#FF1E42]/[0.02] transition-all relative overflow-hidden group">
+              <div 
+                key={idx} 
+                className="min-w-[210px] sm:min-w-[240px] md:min-w-[260px] max-w-[270px] shrink-0 bg-white/[0.02] border border-white/5 p-4 rounded-xl hover:border-[#FF1E42]/50 hover:bg-[#FF1E42]/[0.02] transition-all relative overflow-hidden group flex flex-col justify-between"
+              >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#FF1E42]/0 via-[#FF1E42]/5 to-[#FF1E42]/0 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-full group-hover:translate-x-full duration-1000 ease-in-out" />
-                <span className="text-xs font-mono text-[#FF1E42] block mb-1">{course.num}</span>
-                <h4 className="font-bold text-white text-base mb-2">{course.title}</h4>
-                <p className="text-xs text-slate-400 leading-relaxed">{course.desc}</p>
+                <div>
+                  <span className="text-[11px] font-mono text-[#FF1E42] block mb-1">{course.num}</span>
+                  <h4 className="font-bold text-white text-sm md:text-base mb-1.5 leading-snug">{course.title}</h4>
+                </div>
+                <p className="text-xs text-slate-400 leading-relaxed mt-2">{course.desc}</p>
               </div>
             ))}
           </div>
@@ -204,6 +220,7 @@ export default function GoogleCourses() {
         </div>
 
       </div>
-    </motion.section>
+    </section>
   );
 }
+

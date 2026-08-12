@@ -48,13 +48,9 @@ export default function ContactForm() {
   };
 
   return (
-    <motion.section 
+    <section 
       id="contacto" 
       className="py-20 bg-[#060304] relative"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-4">
         
@@ -184,6 +180,6 @@ export default function ContactForm() {
 
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

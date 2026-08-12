@@ -1,17 +1,13 @@
 'use client';
 
-import { Award, ExternalLink, ShieldAlert, PlaneTakeoff, Truck, Sparkles } from 'lucide-react';
+import { Award, ExternalLink, ShieldAlert, PlaneTakeoff, Truck, Sparkles, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function CertificationsGrid() {
   return (
-    <motion.section 
+    <section 
       id="certificaciones" 
       className="py-20 relative"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-4">
         
@@ -25,7 +21,35 @@ export default function CertificationsGrid() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
-          {/* Cert 1: Congreso IA LATAM 2026 */}
+          {/* Cert 1: PRONABEC Bootcamp de Empleabilidad 2026 */}
+          <div className="bento-glass p-6 flex flex-col justify-between gold-border">
+            <div>
+              <div className="flex items-center justify-between mb-3">
+                <Briefcase className="w-8 h-8 text-blue-400" />
+                <span className="text-[11px] font-mono text-slate-400">Agosto 2026</span>
+              </div>
+              <h4 className="font-bold text-white text-lg mb-1">Bootcamp de Empleabilidad (5 hrs)</h4>
+              <p className="text-xs font-semibold text-blue-400 mb-2">PRONABEC – Minedu (Perú)</p>
+              <p className="text-slate-300 text-xs leading-relaxed mb-4">
+                Constancia de participación en el Bootcamp "Tu viaje al mundo laboral" (Edición 1 2026), otorgada por el Programa Nacional de Becas y Crédito Educativo.
+              </p>
+            </div>
+            <div>
+              <a
+                href="/BOOTCAMP-EMPLEABILIDAD.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 bg-blue-500/10 text-blue-400 border border-blue-500/30 text-xs py-2 px-3 rounded-lg font-semibold hover:bg-blue-500/20 transition-all mb-3 w-full"
+              >
+                <ExternalLink className="w-3.5 h-3.5" /> Ver Constancia PDF Oficial
+              </a>
+              <div className="rounded-lg overflow-hidden border border-white/10 relative h-44 bg-slate-900/80 p-1">
+                <img src="/cert-bootcamp-empleabilidad.png" alt="Constancia Oficial PRONABEC" className="w-full h-full object-contain rounded" />
+              </div>
+            </div>
+          </div>
+
+          {/* Cert 2: Congreso IA LATAM 2026 */}
           <div className="bento-glass p-6 flex flex-col justify-between gold-border">
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -53,7 +77,7 @@ export default function CertificationsGrid() {
             </div>
           </div>
 
-          {/* Cert 2: Mision Buenos Aires (ITBA & UPC) */}
+          {/* Cert 3: Mision Buenos Aires (ITBA & UPC) */}
           <div className="bento-glass p-6 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -71,7 +95,7 @@ export default function CertificationsGrid() {
             </div>
           </div>
 
-          {/* Cert 3: Javeriana */}
+          {/* Cert 4: Javeriana */}
           <div className="bento-glass p-6 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -89,7 +113,7 @@ export default function CertificationsGrid() {
             </div>
           </div>
 
-          {/* Cert 4: Certimaq */}
+          {/* Cert 5: Certimaq */}
           <div className="bento-glass p-6 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -107,7 +131,7 @@ export default function CertificationsGrid() {
             </div>
           </div>
 
-          {/* Cert 5: UPC Congreso 2025 */}
+          {/* Cert 6: UPC Congreso 2025 */}
           <div className="bento-glass p-6 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -127,6 +151,7 @@ export default function CertificationsGrid() {
 
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
+

@@ -6,12 +6,9 @@ import { motion } from 'framer-motion';
 
 export default function HeroSection() {
   return (
-    <motion.section 
+    <section 
       id="hero" 
-      className="py-20 md:py-28 relative"
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="py-12 md:py-28 relative"
     >
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
@@ -104,6 +101,6 @@ export default function HeroSection() {
         </div>
 
       </div>
-    </motion.section>
+    </section>
   );
 }

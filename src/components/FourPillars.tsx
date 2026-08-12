@@ -8,13 +8,9 @@ export default function FourPillars() {
   const [activeTab, setActiveTab] = useState<'psicologia' | 'ciberseguridad' | 'ia' | 'ux-data'>('psicologia');
 
   return (
-    <motion.section 
+    <section 
       id="pilares" 
       className="py-20 relative"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-4">
         
@@ -29,8 +25,9 @@ export default function FourPillars() {
         {/* Tab Buttons */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
           <button
+            type="button"
             onClick={() => setActiveTab('psicologia')}
-            className={`p-4 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 ${
+            className={`p-4 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 ${
               activeTab === 'psicologia'
                 ? 'bg-[#FF1E42] border-[#FF1E42] text-white shadow-[0_4px_20px_rgba(255,30,66,0.4)]'
                 : 'bento-glass text-slate-300 hover:border-[#FF1E42]'
@@ -40,8 +37,9 @@ export default function FourPillars() {
           </button>
 
           <button
+            type="button"
             onClick={() => setActiveTab('ciberseguridad')}
-            className={`p-4 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 ${
+            className={`p-4 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 ${
               activeTab === 'ciberseguridad'
                 ? 'bg-[#FF1E42] border-[#FF1E42] text-white shadow-[0_4px_20px_rgba(255,30,66,0.4)]'
                 : 'bento-glass text-slate-300 hover:border-[#FF1E42]'
@@ -51,8 +49,9 @@ export default function FourPillars() {
           </button>
 
           <button
+            type="button"
             onClick={() => setActiveTab('ia')}
-            className={`p-4 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 ${
+            className={`p-4 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 ${
               activeTab === 'ia'
                 ? 'bg-[#FF1E42] border-[#FF1E42] text-white shadow-[0_4px_20px_rgba(255,30,66,0.4)]'
                 : 'bento-glass text-slate-300 hover:border-[#FF1E42]'
@@ -62,8 +61,9 @@ export default function FourPillars() {
           </button>
 
           <button
+            type="button"
             onClick={() => setActiveTab('ux-data')}
-            className={`p-4 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 ${
+            className={`p-4 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 ${
               activeTab === 'ux-data'
                 ? 'bg-[#FF1E42] border-[#FF1E42] text-white shadow-[0_4px_20px_rgba(255,30,66,0.4)]'
                 : 'bento-glass text-slate-300 hover:border-[#FF1E42]'
@@ -216,15 +216,15 @@ export default function FourPillars() {
                 <ul className="space-y-2.5 pt-2 text-slate-300">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF1E42] shrink-0 mt-0.5" />
-                    <span><strong className="text-white">Diseño de Experiencia (UX):</strong> Wireframing, prototipos interactivos en Figma, mapas de empatía.</span>
+                    <span><strong className="text-white">Ecosistema Web & Consola SOC:</strong> Diseño UX/UI Glassmorphism, telemetría en tiempo real y base de datos Serverless Neon PostgreSQL.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF1E42] shrink-0 mt-0.5" />
-                    <span><strong className="text-white">Análisis de Datos:</strong> Limpieza de datos, consultas SQL, programación en R y visualización.</span>
+                    <span><strong className="text-white">Diseño de Experiencia (UX):</strong> Wireframing Low-Fi y prototipado Hi-Fi en Figma para la plataforma de reservas de belleza.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#FF1E42] shrink-0 mt-0.5" />
-                    <span><strong className="text-white">Desarrollo Web & UI:</strong> Creación de interfaces dinámicas y responsive design.</span>
+                    <span><strong className="text-white">Análisis de Datos & R:</strong> Limpieza de datos, consultas complejas en SQL, programación en R y visualización de métricas.</span>
                   </li>
                 </ul>
               </div>
@@ -249,6 +249,6 @@ export default function FourPillars() {
         </div>
 
       </div>
-    </motion.section>
+    </section>
   );
 }
