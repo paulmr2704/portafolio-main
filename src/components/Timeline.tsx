@@ -45,23 +45,23 @@ export default function Timeline() {
       <div className="max-w-7xl mx-auto px-4">
         
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-flex items-center gap-1.5 font-mono text-xs text-[#FF1E42] bg-[#FF1E42]/10 border border-[#FF1E42]/30 px-3.5 py-1 rounded-full uppercase tracking-wider mb-3">
+          <span className="inline-flex items-center gap-1.5 font-mono text-xs text-[#C7B8A6] bg-[#1F2A44] border border-[#C7B8A6]/30 px-3.5 py-1 rounded-full uppercase tracking-wider mb-3">
             TRAYECTORIA OPERATIVA
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">Experiencia Laboral & Resiliencia Polifuncional</h2>
-          <p className="text-slate-400 mt-2">Historial de roles donde he aplicado autonomía, resolución de problemas y trabajo bajo presión.</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#F2EFE8]">Experiencia Laboral & Resiliencia Polifuncional</h2>
+          <p className="text-[#C7B8A6] mt-2">Historial de roles donde he aplicado autonomía, resolución de problemas y trabajo bajo presión.</p>
         </div>
 
-        <div className="max-w-3xl mx-auto relative border-l-2 border-[#FF1E42]/30 pl-8 space-y-8">
+        <div className="max-w-3xl mx-auto relative border-l-2 border-[#C7B8A6]/30 pl-8 space-y-8">
           {experiences.map((exp, idx) => (
             <div key={idx} className="relative">
-              <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#FF1E42] shadow-[0_0_10px_rgba(255,30,66,0.5)]"></div>
+              <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-slate-400"></div>
               
               <div className="bento-glass p-6">
-                <span className="text-xs font-mono text-[#FF1E42] block mb-1">{exp.date}</span>
-                <h4 className="text-lg font-bold text-white mb-1">{exp.role}</h4>
-                <p className="text-xs font-semibold text-slate-400 mb-3">{exp.company}</p>
-                <p className="text-slate-300 text-sm leading-relaxed">{exp.desc}</p>
+                <span className="text-xs font-mono text-[#C7B8A6] block mb-1">{exp.date}</span>
+                <h4 className="text-lg font-bold text-[#F2EFE8] mb-1">{exp.role}</h4>
+                <p className="text-xs font-semibold text-[#C7B8A6] mb-3">{exp.company}</p>
+                <p className="text-[#C7B8A6] text-sm leading-relaxed">{exp.desc}</p>
               </div>
             </div>
           ))}

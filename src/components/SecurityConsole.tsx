@@ -21,7 +21,7 @@ export default function SecurityConsole() {
  -----------------------------------------------------------------------
  Welcome to my Web Portfolio! Contact: paulomeza2105@gmail.com
     `;
-    console.log(asciiArt, 'color: #FF1E42; font-weight: bold; font-family: monospace;');
+    console.log(asciiArt, 'color: #CBD5E1; font-weight: bold; font-family: monospace;');
 
     // 2. Anti-Reconnaissance Keyboard Event Listener
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -59,20 +59,20 @@ export default function SecurityConsole() {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background: rgba(20, 10, 14, 0.95);
-        border: 1px solid #FF1E42;
+        background: rgba(10, 6, 8, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.1);
         color: #F8FAFC;
         padding: 12px 20px;
         border-radius: 8px;
         font-family: monospace;
         font-size: 0.85rem;
-        box-shadow: 0 0 20px rgba(255, 30, 66, 0.5);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         z-index: 9999;
         transition: all 0.3s ease;
       `;
       document.body.appendChild(toast);
     }
-    toast.innerHTML = `<span style="color:#FF1E42;">🛡️ <strong>SEC-EVENT:</strong></span> ${message}`;
+    toast.innerHTML = `<span style="color:#CBD5E1;">🛡️ <strong>SEC-EVENT:</strong></span> ${message}`;
     toast.style.opacity = '1';
     toast.style.transform = 'translateY(0)';
 

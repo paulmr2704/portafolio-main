@@ -58,52 +58,52 @@ export default function ContactForm() {
           
           {/* Left Column: Direct Info */}
           <div className="lg:col-span-5 space-y-6">
-            <span className="inline-flex items-center gap-1.5 font-mono text-xs text-[#FF1E42] bg-[#FF1E42]/10 border border-[#FF1E42]/30 px-3.5 py-1 rounded-full uppercase tracking-wider">
+            <span className="inline-flex items-center gap-1.5 font-mono text-xs text-[#C7B8A6] bg-[#1F2A44] border border-[#C7B8A6]/30 px-3.5 py-1 rounded-full uppercase tracking-wider">
               CONECTEMOS
             </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white">Hablemos de Proyectos e Innovación</h2>
-            <p className="text-slate-400 text-sm leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#F2EFE8]">Hablemos de Proyectos e Innovación</h2>
+            <p className="text-[#C7B8A6] text-sm leading-relaxed">
               Estoy abierto a oportunidades laborales, proyectos de Ciberseguridad/SOC, desarrollo de agentes de IA o consultorías UX centradas en el comportamiento humano.
             </p>
 
             <div className="space-y-4 pt-2">
-              <a href="mailto:paulomeza2105@gmail.com" className="bento-glass p-4 flex items-center gap-4 hover:border-[#FF1E42] transition-colors">
-                <div className="w-12 h-12 rounded-full bg-[#FF1E42]/10 flex items-center justify-center text-[#FF1E42] shrink-0">
+              <a href="mailto:paulomeza2105@gmail.com" className="bento-glass p-4 flex items-center gap-4 hover:border-[#C7B8A6]/30 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-[#1F2A44] flex items-center justify-center text-[#C7B8A6] shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-slate-400 block">Correo Electrónico</span>
-                  <strong className="text-white text-sm">paulomeza2105@gmail.com</strong>
+                  <span className="text-xs text-[#C7B8A6] block">Correo Electrónico</span>
+                  <strong className="text-[#F2EFE8] text-sm">paulomeza2105@gmail.com</strong>
                 </div>
               </a>
 
-              <a href="https://wa.me/51967393210" target="_blank" rel="noopener noreferrer" className="bento-glass p-4 flex items-center gap-4 hover:border-[#FF1E42] transition-colors">
-                <div className="w-12 h-12 rounded-full bg-[#FF1E42]/10 flex items-center justify-center text-[#FF1E42] shrink-0">
+              <a href="https://wa.me/51967393210" target="_blank" rel="noopener noreferrer" className="bento-glass p-4 flex items-center gap-4 hover:border-[#C7B8A6]/30 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-[#1F2A44] flex items-center justify-center text-[#C7B8A6] shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-slate-400 block">WhatsApp</span>
-                  <strong className="text-white text-sm">@Kairos_yz</strong>
+                  <span className="text-xs text-[#C7B8A6] block">WhatsApp</span>
+                  <strong className="text-[#F2EFE8] text-sm">@Kairos_yz</strong>
                 </div>
               </a>
 
-              <a href="https://www.linkedin.com/in/paulomezaupc/" target="_blank" rel="noopener noreferrer" className="bento-glass p-4 flex items-center gap-4 hover:border-[#FF1E42] transition-colors">
-                <div className="w-12 h-12 rounded-full bg-[#FF1E42]/10 flex items-center justify-center text-[#FF1E42] shrink-0">
+              <a href="https://www.linkedin.com/in/paulomezaupc/" target="_blank" rel="noopener noreferrer" className="bento-glass p-4 flex items-center gap-4 hover:border-[#C7B8A6]/30 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-[#1F2A44] flex items-center justify-center text-[#C7B8A6] shrink-0">
                   <LinkedinIcon className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-slate-400 block">LinkedIn</span>
-                  <strong className="text-white text-sm">linkedin.com/in/paulomezaupc</strong>
+                  <span className="text-xs text-[#C7B8A6] block">LinkedIn</span>
+                  <strong className="text-[#F2EFE8] text-sm">linkedin.com/in/paulomezaupc</strong>
                 </div>
               </a>
 
-              <a href="https://github.com/paulmr2704" target="_blank" rel="noopener noreferrer" className="bento-glass p-4 flex items-center gap-4 hover:border-[#FF1E42] transition-colors">
-                <div className="w-12 h-12 rounded-full bg-[#FF1E42]/10 flex items-center justify-center text-[#FF1E42] shrink-0">
+              <a href="https://github.com/paulmr2704" target="_blank" rel="noopener noreferrer" className="bento-glass p-4 flex items-center gap-4 hover:border-[#C7B8A6]/30 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-[#1F2A44] flex items-center justify-center text-[#C7B8A6] shrink-0">
                   <GithubIcon className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-slate-400 block">GitHub</span>
-                  <strong className="text-white text-sm">github.com/paulmr2704</strong>
+                  <span className="text-xs text-[#C7B8A6] block">GitHub</span>
+                  <strong className="text-[#F2EFE8] text-sm">github.com/paulmr2704</strong>
                 </div>
               </a>
             </div>
@@ -113,53 +113,53 @@ export default function ContactForm() {
           <div className="lg:col-span-7">
             <div className="bento-glass p-8">
               
-              <div className="flex items-center justify-between pb-4 mb-6 border-b border-white/10">
-                <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                  <Mail className="w-5 h-5 text-[#FF1E42]" /> Contáctame
+              <div className="flex items-center justify-between pb-4 mb-6 border-b border-[#C7B8A6]/30">
+                <h3 className="text-xl font-bold text-[#F2EFE8] flex items-center gap-2">
+                  <Mail className="w-5 h-5 text-[#C7B8A6]" /> Contáctame
                 </h3>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1.5">Tu Nombre Completo</label>
+                  <label className="block text-xs font-medium text-[#C7B8A6] mb-1.5">Tu Nombre Completo</label>
                   <input
                     type="text"
                     required
                     value={formData.name}
                     onChange={e => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Ej. Carlos Mendoza"
-                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:border-[#FF1E42] transition-colors"
+                    className="w-full bg-[#1F2A44] border border-[#C7B8A6]/30 rounded-lg px-4 py-2.5 text-sm text-[#F2EFE8] placeholder:text-[#C7B8A6] focus:outline-none focus:border-[#C7B8A6]/30 transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1.5">Tu Correo Electrónico</label>
+                  <label className="block text-xs font-medium text-[#C7B8A6] mb-1.5">Tu Correo Electrónico</label>
                   <input
                     type="email"
                     required
                     value={formData.email}
                     onChange={e => setFormData({ ...formData, email: e.target.value })}
                     placeholder="ejemplo@empresa.com"
-                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:border-[#FF1E42] transition-colors"
+                    className="w-full bg-[#1F2A44] border border-[#C7B8A6]/30 rounded-lg px-4 py-2.5 text-sm text-[#F2EFE8] placeholder:text-[#C7B8A6] focus:outline-none focus:border-[#C7B8A6]/30 transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1.5">Mensaje o Propuesta</label>
+                  <label className="block text-xs font-medium text-[#C7B8A6] mb-1.5">Mensaje o Propuesta</label>
                   <textarea
                     required
                     rows={4}
                     value={formData.message}
                     onChange={e => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Escribe tu mensaje o propuesta aquí..."
-                    className="w-full bg-white/[0.03] border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:border-[#FF1E42] transition-colors"
+                    className="w-full bg-[#1F2A44] border border-[#C7B8A6]/30 rounded-lg px-4 py-2.5 text-sm text-[#F2EFE8] placeholder:text-[#C7B8A6] focus:outline-none focus:border-[#C7B8A6]/30 transition-colors"
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="w-full bg-[#FF1E42] text-white py-3 rounded-lg font-semibold hover:bg-[#E6002E] transition-all flex items-center justify-center gap-2 shadow-none disabled:opacity-50"
+                  className="w-full bg-[#B46A55] text-[#F2EFE8] py-3 rounded-lg font-bold hover:bg-[#9c5946] transition-all flex items-center justify-center gap-2 shadow-none disabled:opacity-50"
                 >
                   <Send className="w-4 h-4" />
                   {status === 'loading' ? 'Enviando...' : 'Enviar Mensaje'}

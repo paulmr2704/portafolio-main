@@ -9,7 +9,7 @@
 ---
 
 ## 🎯 Resumen Profesional
-Estudiante de Psicología Organizacional (UPC) especializado en Operaciones SOC, Threat Hunting, Agentes de IA y Diseño UX/UI. Conecto el comportamiento humano con defensas digitales infranqueables y sistemas inteligentes. Poseo 31 certificaciones de Google y Coursera, incluyendo 4 Certificados Profesionales Duales de Google.
+Estudiante de Psicología Organizacional (UPC) especializado en Operaciones SOC, Threat Hunting, Agentes de IA y Diseño UX/UI. Conecto el comportamiento humano con defensas digitales infranqueables y sistemas inteligentes. Poseo más de 35 certificaciones, incluyendo 4 Certificados Profesionales Duales de Google y especializaciones clave de Cisco en Programación, Datos y Ciberseguridad.
 
 ---
 
@@ -57,6 +57,7 @@ Estudiante de Psicología Organizacional (UPC) especializado en Operaciones SOC,
    * Figma avanzado (Wireframing, Prototipado Hi-Fi).
    * Metodologías de Diseño Centrado en el Usuario y Design Thinking.
    * Análisis de métricas UX y tests de usabilidad A/B.
+   * Recopilación, validación y análisis visual de datos (Data Storytelling).
 
 ---
 
@@ -67,6 +68,13 @@ Estudiante de Psicología Organizacional (UPC) especializado en Operaciones SOC,
   2. Google Data Analytics Professional Certificate
   3. Google UX Design Professional Certificate
   4. Google IT Support Professional Certificate
+* **Certificaciones Cisco Networking Academy**:
+  * Introducción a Ciberseguridad
+  * Conciencia sobre seguridad y protección digital
+  * Fundamentos de Python 1
+  * Fundamentos de Python 2
+  * Introducción a la Ciencia de Datos
+  * Fundamentos de Análisis de Datos
 * **ITBA (Instituto Tecnológico de Buenos Aires)**: Certificación Profesional en Ciberseguridad con IA (30 horas).
 * **Pontificia Universidad Javeriana & UPC**: Arquitectura de Ciberseguridad con IA (Winter School, Julio 2026).
 * **Comunidad IA LATAM**: Asistente del 1er Congreso IA LATAM 2026 (20 horas de formación continua).
@@ -74,13 +82,12 @@ Estudiante de Psicología Organizacional (UPC) especializado en Operaciones SOC,
 * **PRONABEC**: Bootcamp de Empleabilidad "Estrategia Mundo Laboral" (Edición 1 2026).
 * **CERTIMAQ GROUP SAC**: Operador Múltiple & Seguridad (2025 - 2026).
 * **Microsoft**: Certificaciones en SC-900 y AZ-900 (Security & Cloud Fundamentals).
-* **Cisco Networking Academy**: Ciberseguridad Essentials, Endpoint Security, Network Defense.
 * **EC-Council**: Ethical Hacking Essentials (EHE).
 
 ---
 
 ## 🛠️ Herramientas y Tecnologías
 * **Seguridad**: SIEM, EDR, WAF, Zero Trust, OSINT.
-* **Desarrollo**: React, Next.js, Tailwind CSS, Python, PostgreSQL.
+* **Desarrollo**: React, Next.js, Tailwind CSS, Python (OOP, Scripts), PostgreSQL.
 * **Diseño**: Figma, Design Thinking, Prototipado.
-* **Datos & Nube**: SQL, Análisis de Datos, AWS/Azure (Fundamentos).
+* **Datos & Nube**: SQL, Excel Avanzado, Tableau, R, AWS/Azure (Fundamentos).

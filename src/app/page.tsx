@@ -10,7 +10,7 @@ import { Cloud, Lock } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0A0608] text-slate-100 relative selection:bg-[#FF1E42] selection:text-white">
+    <div className="min-h-screen bg-[#0B1320] text-slate-100 relative selection:bg-[#B46A55] selection:text-white">
       {/* Header Navigation */}
       <Navbar />
 
@@ -26,7 +26,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-white/5 bg-[#060304] text-xs text-slate-400 relative z-10">
+      <footer className="py-8 border-t border-white/5 bg-[#060A12] text-xs text-slate-400 relative z-10">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; 2026 Paulo Cesar Meza Rojas. Todos los derechos reservados.</p>
         </div>
