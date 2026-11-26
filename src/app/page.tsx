@@ -1,36 +1,26 @@
-import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import FourPillars from '@/components/FourPillars';
-import ProjectsGrid from '@/components/ProjectsGrid';
-import CertificationsGrid from '@/components/CertificationsGrid';
-import GoogleCourses from '@/components/GoogleCourses';
-import Timeline from '@/components/Timeline';
-import ContactForm from '@/components/ContactForm';
-import { Cloud, Lock } from 'lucide-react';
+import HeroSection from "@/components/sections/HeroSection";
+import FourPillarsSection from "@/components/sections/FourPillarsSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import CredentialsSection from "@/components/sections/CredentialsSection";
+import TimelineSection from "@/components/sections/TimelineSection";
+import ContactSection from "@/components/sections/ContactSection";
+import { buildHomeJsonLd, serializeJsonLd } from "@/lib/seo/json-ld";
 
-export default function Home() {
+export default function HomePage() {
+  const jsonLd = buildHomeJsonLd();
+
   return (
-    <div className="min-h-screen bg-[#0B1320] text-slate-100 relative selection:bg-[#B46A55] selection:text-white">
-      {/* Header Navigation */}
-      <Navbar />
-
-      {/* Main Content Sections */}
-      <main className="relative z-10">
-        <HeroSection />
-        <FourPillars />
-        <ProjectsGrid />
-        <CertificationsGrid />
-        <GoogleCourses />
-        <Timeline />
-        <ContactForm />
-      </main>
-
-      {/* Footer */}
-      <footer className="py-8 border-t border-white/5 bg-[#060A12] text-xs text-slate-400 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; 2026 Paulo Cesar Meza Rojas. Todos los derechos reservados.</p>
-        </div>
-      </footer>
-    </div>
+    <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
+      />
+      <HeroSection />
+      <FourPillarsSection />
+      <ProjectsSection />
+      <CredentialsSection />
+      <TimelineSection />
+      <ContactSection />
+    </main>
   );
 }

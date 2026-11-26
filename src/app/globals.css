@@ -1,71 +1,167 @@
 @import "tailwindcss";
 
+@theme inline {
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-sketch: var(--font-architects-daughter), cursive, sans-serif;
+}
+
 @layer base {
   :root {
-    --bg-dark: #0B1320;
-    --bg-darker: #060a12;
-    --bg-card: rgba(31, 42, 68, 0.75); /* #1F2A44 */
-    
-    --primary-red: #B46A55;
-    --primary-red-glow: rgba(180, 106, 85, 0.2);
-    --secondary-red: #B46A55;
-    --accent-rose: #C7B8A6;
-    --accent-gold: #C7B8A6;
-    --accent-cyan: #1F2A44;
+    --bg-paper: #F4F5F7;
+    --bg-paper-alt: #EAECEF;
+    --bg-card: #FFFFFF;
 
-    --border-card: rgba(199, 184, 166, 0.2); /* #C7B8A6 */
-    --border-card-hover: rgba(199, 184, 166, 0.5);
+    --ink-primary: #1E242B;
+    --ink-secondary: #3A434E;
+    --ink-muted: #5F6B7A;
 
-    --text-main: #F2EFE8;
-    --text-muted: #C7B8A6;
+    --accent-yellow: #F6CE3E;
+    --accent-yellow-soft: #FEF3C7;
+    --accent-coral: #E06A4E;
+    --accent-coral-hover: #CC583C;
+    --accent-cyan: #53B8E2;
+    --accent-cyan-soft: #E0F4FC;
+    --accent-green: #84BA77;
+    --accent-green-soft: #E6F4E2;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-paper);
+    color: var(--ink-primary);
   }
 
   body {
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-paper);
+    color: var(--ink-primary);
+    font-family: var(--font-space-grotesk), system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--accent-coral);
+    outline-offset: 2px;
   }
 }
 
-/* Custom Scrollbar */
+/* Custom Studio Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg-darker);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--primary-red);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-rose);
+  width: 10px;
+  height: 10px;
 }
 
-/* Glassmorphism Bento Card Utility */
-.bento-glass {
-  background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-card);
+::-webkit-scrollbar-track {
+  background: var(--bg-paper-alt);
+  border-left: 2px solid var(--ink-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-yellow);
+  border: 2px solid var(--ink-primary);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-coral);
+}
+
+/* Drafting Blueprint / Sketchbook Grid */
+.bg-studio-grid {
+  background-color: var(--bg-paper);
+  background-image:
+    linear-gradient(to right, rgba(30, 36, 43, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 36, 43, 0.055) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Handwritten Wireframe Label Font */
+.font-sketch {
+  font-family: var(--font-architects-daughter), cursive, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Neobrutalist / Technical Wireframe Card */
+.sketch-card {
+  background-color: var(--bg-card);
+  border: 2px solid var(--ink-primary);
   border-radius: 1rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 4px 4px 0px var(--ink-primary);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
 @media (hover: hover) {
-  .bento-glass:hover {
-    border-color: var(--border-card-hover);
-    transform: translateY(-2px);
-    z-index: 10;
+  .sketch-card-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--ink-primary);
   }
 }
 
-/* Glow Effects */
-.red-glow {
-  box-shadow: none;
+/* Tactile Buttons */
+.sketch-btn-coral {
+  background-color: var(--accent-coral);
+  color: #FFFFFF;
+  border: 2px solid var(--ink-primary);
+  box-shadow: 3px 3px 0px var(--ink-primary);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
-.gold-border {
-  border-color: rgba(255, 255, 255, 0.08);
+.sketch-btn-coral:hover {
+  background-color: var(--accent-coral-hover);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--ink-primary);
+}
+
+.sketch-btn-coral:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--ink-primary);
+}
+
+.sketch-btn-yellow {
+  background-color: var(--accent-yellow);
+  color: var(--ink-primary);
+  border: 2px solid var(--ink-primary);
+  box-shadow: 3px 3px 0px var(--ink-primary);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.sketch-btn-yellow:hover {
+  background-color: #f3c41e;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--ink-primary);
+}
+
+.sketch-btn-yellow:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--ink-primary);
+}
+
+.sketch-btn-white {
+  background-color: #FFFFFF;
+  color: var(--ink-primary);
+  border: 2px solid var(--ink-primary);
+  box-shadow: 3px 3px 0px var(--ink-primary);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.sketch-btn-white:hover {
+  background-color: var(--accent-yellow-soft);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--ink-primary);
+}
+
+.sketch-btn-white:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--ink-primary);
+}
+
+/* Marker Highlight Box (like 'WEB' / 'SEO' in reference) */
+.marker-box-yellow {
+  background-color: var(--accent-yellow);
+  color: var(--ink-primary);
+  border: 2px solid var(--ink-primary);
+  box-shadow: 3px 3px 0px var(--ink-primary);
+  padding: 0.05em 0.32em;
+  border-radius: 0.4rem;
+  display: inline-block;
 }

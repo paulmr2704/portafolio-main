@@ -1,0 +1,27 @@
+# Paulo Cesar Meza Rojas (Paul Meza)
+
+> Analista de Ciberseguridad (SOC), Threat Hunter, Desarrollador de Agentes de IA y Especialista en Psicología Organizacional & Diseño UX/UI en Lima, Perú (Disponible Remoto / Híbrido).
+
+## Resumen Ejecutivo
+Estudiante de Psicología Organizacional en la Universidad Peruana de Ciencias Aplicadas (UPC) especializado en la intersección entre comportamiento humano, Operaciones SOC, Arquitectura Segura (Zero Trust / STRIDE), Agentes Autónomos de IA y Diseño de Producto UX/UI. Galardonado con el 2º Puesto Internacional en la Hackathon de Ciberseguridad e IA en el ITBA (Buenos Aires, Argentina). Cuenta con más de 37 cursos y certificaciones verificables de Google, Cisco, Microsoft, EC-Council, ITBA y Pontificia Universidad Javeriana.
+
+## Competencias Principales (4 Pilares)
+- **Ciberseguridad & Operaciones SOC**: SIEM (Elastic / Kibana, ES|QL), Threat Hunting, MITRE ATT&CK, modelado de amenazas STRIDE, Zero Trust (ZTNA), OWASP Top 10, ISO/IEC 27001, Nmap, Wireshark.
+- **Psicología Organizacional & Factor Humano**: Mitigación de ingeniería social y phishing defensivo, ciberpsicología, psicología cognitiva aplicada a usabilidad y gestión bajo presión.
+- **Inteligencia Artificial & Agentes Autónomos**: Desarrollo en Python, Agentes antifraude en tiempo real, LangChain / AutoGen, Prompt Engineering defensivo (mitigación de Prompt Injection).
+- **Diseño UX/UI & Análisis de Datos**: Investigación UX, Design Thinking, Figma (Wireframes Low-Fi a Prototipos Hi-Fi), WCAG 2.1 AA, Next.js 16, React, SQL, R Programming, Tableau.
+
+## Casos de Estudio Indexables
+- [Yape Track AI – Agente Autónomo Antifraude](https://paulmeza.vercel.app/proyectos/yape-track-ai): 2º Puesto en Hackathon Internacional de Ciberseguridad e IA (ITBA, Buenos Aires).
+- [Arquitectura Zero Trust & Evaluación STRIDE](https://paulmeza.vercel.app/proyectos/arquitectura-zero-trust-stride): Diseño de Defensa en Profundidad en 5 anillos y 13 controles (Pontificia Universidad Javeriana & UPC).
+- [Plataforma UX Gestión y Reserva de Citas](https://paulmeza.vercel.app/proyectos/plataforma-ux-salon-belleza): Caso de estudio end-to-end Google UX Design con prototipo en React y Figma Hi-Fi.
+- [Ecosistema Portafolio Web Seguro SOC](https://paulmeza.vercel.app/proyectos/ecosistema-portafolio-soc): Arquitectura Next.js 16 Server-First con CSP, Rate Limiting HTTP 429, validación Zod y DAL Neon PostgreSQL.
+
+## Enlaces Oficiales y Verificación
+- Portafolio Web: https://paulmeza.vercel.app
+- LinkedIn: https://www.linkedin.com/in/paulomezaupc/
+- GitHub: https://github.com/paulmr2704
+- Credly (Insignias verificadas): https://www.credly.com/users/paulo-cesar-meza-rojas
+- CV Oficial (PDF): https://paulmeza.vercel.app/docs/cv.pdf
+- Contacto Directo: mailto:paulomeza2105@gmail.com | Mensajería Directa: @Kairos_05mr
+

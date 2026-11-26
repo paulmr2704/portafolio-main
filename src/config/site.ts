@@ -1,0 +1,40 @@
+export const SITE_CONFIG = {
+  name: "Paulo Cesar Meza Rojas",
+  shortName: "Paul Meza",
+  brandPrefix: "PAUL",
+  brandSuffix: "MEZA",
+  role: "Analista de Ciberseguridad (SOC) & Desarrollador de Agentes IA",
+  tagline:
+    "Psicología Organizacional (UPC) aplicada a Operaciones SOC, Threat Hunting, Agentes Autónomos de IA y Diseño UX/UI centrado en el factor humano.",
+  location: "Lima, Perú",
+  workMode: "Remoto / Híbrido",
+  availability: "Disponible para oportunidades (Open to Work)",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://paulmeza.vercel.app",
+  locale: "es_PE",
+  email: "paulomeza2105@gmail.com",
+  // Identificador directo sin número telefónico expuesto por políticas OPSEC / Anti-Doxxing
+  directHandle: "@Kairos_05mr",
+  directHandlePlatform: "WhatsApp Directo (Usuario)",
+  cvPath: "/docs/cv.pdf",
+  profileImage: "/images/profile/perfil.jpg",
+  links: {
+    github: "https://github.com/paulmr2704",
+    linkedin: "https://www.linkedin.com/in/paulomezaupc/",
+    credly: "https://www.credly.com/users/paulo-cesar-meza-rojas",
+  },
+  seoKeywords: [
+    "Paulo Cesar Meza Rojas",
+    "Paulo Meza",
+    "Paul Meza UPC",
+    "Analista SOC Lima Perú",
+    "Threat Hunting Ciberseguridad",
+    "Desarrollador Agentes IA Python",
+    "Arquitectura Zero Trust STRIDE",
+    "Psicología Organizacional Ciberseguridad",
+    "Ingeniería Social Defensiva",
+    "Diseñador UX UI Factor Humano",
+    "Google Cybersecurity Certificate Perú",
+    "Hackathon Ciberseguridad ITBA",
+  ],
+} as const;
+
